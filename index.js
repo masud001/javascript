@@ -3,4 +3,6 @@ let person = {
 	age: 23
 };
 
-console.log(person);
+// javascript object declatetion with DOT notation
+person.name = "Masudur Rahman";
+console.log(person.name);
