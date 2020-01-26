@@ -1,35 +1,75 @@
-// Learning JavaScript Functions.
-// 'Function' is one of the funddamental biulding blocks of javascript.
+// Overview of oparators
+// we have 5 types of oparators in javascript
 
-// this is the function which is perfforming a task
-function greet(firstName, lastName) {
-	console.log("Hello " + firstName + " " + lastName);
+// 1. Arithmetic Oparators
+let x = 10;
+let y = 20;
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
+console.log(x % y);
+console.log(x ** y);
+// 1.1 Increments Oparators (++)
+// increment first then add add one so output is 11
+console.log(++x);
+// first asign 10 on x then it increments 1 so value is 10 for now
+console.log(x++);
+// but if i print this value again the it will be 11
+console.log(x);
+
+// 1.2 Decrements Oparators (--)
+// it will decrements first then asign valu toit it is 9 for now
+console.log(--x);
+// 2. Assignment Oparators
+let a = 2;
+a++;
+console.log(a);
+// this a++  is axactly same as
+a = a + 1;
+console.log(a);
+// this is not going to work here
+let b = 2;
+// here line 34 and 35 are exactly same
+// b = b + 5;
+b += 5;
+console.log(b);
+
+// 3. Comparison Oparators
+// 3.1 relational oparators
+console.log(a > 1);
+console.log(a < 1);
+console.log(a >= 1);
+console.log(a <= 1);
+// 3.2 equality oparators
+console.log(a == 2);
+console.log(a != 2);
+// 3.3 strict Equality (type and value) are the same!
+console.log(a === 2);
+// 3.4 loose Equality (value OR type) are not same
+console.log("1" == 1);
+console.log("1" == 1);
+// 4. Logical Oparators
+// 4.1 Ternary Oparetor
+// NOTE conditions : if a customar have more than 100 points then it will be considered golden
+// if it is less than 100 then it is silver customar.
+let points = 100;
+let type = points >= 100 ? "Gold" : "silver";
+console.log(type);
+// 5. Bitwise Opearators
+
+import React, { Component } from "react";
+
+export class index extends Component {
+	render() {
+		return (
+			<div>
+				<div className="className">
+					<div className="exampleClass"></div>
+				</div>
+			</div>
+		);
+	}
 }
-greet("Masudur", "Rahman");
 
-// V.V.I.N:
-// in this example, the 'statement' we declare console.log("hello world"),
-// So it should be terminated by semicolon [;]
-
-// but when we declaring a function we don't need to add semicolon[;] at the end of function.
-// because we are not declaring a variable let varName = "value"; . this is a function declaration.
-// when i we call this function, this is a 'statement' so we need semicolon
-
-// variable firstName and lastName are only meaningfull inside greet() function
-// in this function, greet(firstName, lastName) here firstName, lastName is called parameter of this function,
-// these parameter is not accessable from out side of this functions.
-// when we pass variable  with function statement greet("Masudur", "Rahman"),
-// here Masudur and Rahman is arguments of this functions
-
-// functions performing a calculations
-
-function squire(number) {
-	return number * number;
-}
-
-let number = squire(2);
-console.log(number);
-// we can store this 'return value' in a variable here 'number' is a variable.
-// we can use this value to initialize this in a variable "number"
-console.log(squire(4));
-// or we can declare this functon directly inside console
+export default index;
