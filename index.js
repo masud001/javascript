@@ -31,3 +31,13 @@ for (let index = 0; index <= 5; index++) {
 		console.log(index);
 	}
 }
+
+// while loop in javaScript
+console.log("while loop in javaScript");
+let i = 0;
+while (i <= 5) {
+	if (i % 2 !== 0) {
+		console.log(i);
+	}
+	i++;
+}
