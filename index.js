@@ -41,3 +41,13 @@ while (i <= 5) {
 	}
 	i++;
 }
+
+// do while loop
+console.log("do while loop");
+let j = 9;
+do {
+	if (j % 2 !== 0) {
+		console.log(j);
+	}
+	j++;
+} while (j <= 5);
