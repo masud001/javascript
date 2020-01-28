@@ -52,7 +52,7 @@ do {
 	j++;
 } while (j <= 5);
 
-// for in loop
+// for In/Of loop which is works with object and array
 let person = {
 	name: "Masud",
 	age: 20,
@@ -60,6 +60,7 @@ let person = {
 	height: 5
 };
 
+// for in loop is wrking with Object
 for (const key in person) {
 	if (person.hasOwnProperty(key)) {
 		const element = person[key];
@@ -67,7 +68,9 @@ for (const key in person) {
 	}
 }
 
+// for of loop is working with array
+
 const color = ["green", "red", "yellow", "pink"];
-for (const index in color) {
-	console.log(index, color[index]);
+for (const colors of color) {
+	console.log(colors);
 }
