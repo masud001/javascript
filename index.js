@@ -22,3 +22,12 @@ switch (role) {
 	default:
 		console.log(`Default user : ${role}`);
 }
+
+// for loop in javascript
+// for (initializations; conditions; increments/decrements) { }
+
+for (let index = 0; index <= 5; index++) {
+	if (index % 2 !== 0) {
+		console.log(index);
+	}
+}
