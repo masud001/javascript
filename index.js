@@ -51,3 +51,23 @@ do {
 	}
 	j++;
 } while (j <= 5);
+
+// for in loop
+let person = {
+	name: "Masud",
+	age: 20,
+	color: "black",
+	height: 5
+};
+
+for (const key in person) {
+	if (person.hasOwnProperty(key)) {
+		const element = person[key];
+		console.log(key + " : " + element);
+	}
+}
+
+const color = ["green", "red", "yellow", "pink"];
+for (const index in color) {
+	console.log(index, color[index]);
+}
