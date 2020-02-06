@@ -42,3 +42,16 @@ function CircleConstructor(radius) {
 const circle = new CircleConstructor(10);
 console.log(circle.radius);
 console.log(circle.draw());
+
+// dynamic natue of object. it can be modify or delete or update...
+const masud = {
+	name: "Rahman",
+	age: 20
+};
+masud.class = "Graguate";
+masud.village = "madhnagar";
+masud.eat = function() {
+	console.log("he eat..");
+};
+delete masud.eat;
+console.log(masud);
