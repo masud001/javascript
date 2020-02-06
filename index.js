@@ -4,8 +4,9 @@
 
 // circle.draw();
 
-// factory function
-
+// factory function to create an object in javascript,
+// no need to write NEW keyword....
+// Factory Function
 function createCircle(radius) {
 	return {
 		radius,
