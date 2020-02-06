@@ -27,7 +27,10 @@ console.log(circle1.draw("Masudur", " Rahman"));
 // Naming conventions in javascript are 2 types:
 // 1.CamelCase Notations... oneTwoThree.
 // 2.Pascel Notations...OneTwoThree.
-
+// IN A CONSTRUCTOR FUNCTION 3 THISNG HEPPENDS
+// 1.'new' keywords creates EMPTY javascript object under the hude...
+// 2.'this' keywords points to empty javascript object.
+// 2.'new' keywords will returns in this new object from this function here "CircleConstructor"...
 // Constructor uses Pascel Notations
 function CircleConstructor(radius) {
 	this.radius = radius;
